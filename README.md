@@ -26,5 +26,5 @@ In your _.vim/_ folder create the following structure.
 		+-- start/
 ```
 
-Then, clone the repository `git clone` inside the _start/_ directory and you are good to go!
+Then, clone the repository `git clone https://github.com/qdebroise/minicommenter.git` inside the _start/_ directory and you are good to go!
 
