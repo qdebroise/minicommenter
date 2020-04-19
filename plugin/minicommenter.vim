@@ -29,7 +29,7 @@ endfunction
 
 " If the selection is greater than the parameter then block commenting will be
 " used if available.
-call s:var_init_missing("g:mincomment_block_threshold", -1)
+call s:var_init_missing("g:mincomment_block_threshold", 50)
 
 " Filetypes comments symbols {{{
 " This list if based on the list in the NERDCommenter plugin.
@@ -179,14 +179,8 @@ function s:toggle_comment() range
     endif
 
     " Find which types of comment are available.
-    let single_comment_available = v:true
-    let block_comment_available = v:true
-    if empty(b:mincomment_sym[0])
-        let single_comment_available = v:false
-    endif
-    if empty(b:mincomment_sym[1])
-        let block_comment_available = v:false
-    endif
+    let single_comment_available = empty(b:mincomment_sym[0])
+    let block_comment_available = empty(b:mincomment_sym[1])
 
     " Retrieve comment symbols.
     if single_comment_available
