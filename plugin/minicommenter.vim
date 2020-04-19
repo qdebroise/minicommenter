@@ -168,12 +168,12 @@ endfunction
 """"" Core {{{
 
 function s:toggle_comment() range
-    " Print a nice message the the user when filetype is unknown.
+    " Print a nice message to the the user when filetype is unknown.
     if b:mincomment_unknown_filetype
         echohl WarningMsg |
             \ echom 
                 \   "Unkown comment symbols for '" . &filetype . "' filetype. "
-                \ . "Extend the list in ~/.vim/pack/plugins/start/NERD_commenter/plugin/minicommenter.vim :)" | 
+                \ . "Extend the list in ~/.vim/pack/plugins/start/minicommenter/plugin/minicommenter.vim :)" | 
             \ echohl None
         return
     endif
