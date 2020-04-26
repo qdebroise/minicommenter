@@ -10,21 +10,12 @@ The default is &lt;leader&gt;cc which can easily be changed inside the plugin so
 
 ## Install
 
-Vim >= 8.0 is required.
+**With Vim >= 8.0**
 
-Follow the standard installation procedure that comes with Vim 8.0 package manager.
-
-In your _.vim/_ folder create the following structure.
+Use Vim package manager.
 
 ```
-.vimrc/
-|
-+-- pack/
-	|
-	+-- plugins/
-	    |
-		+-- start/
+mkdir ~/.vimrc/pack/plugins/start
+cd ~/.vimrc/pack/plugins/start
+git clone https://github.com/qdebroise/minicommenter.git
 ```
-
-Then, clone the repository `git clone https://github.com/qdebroise/minicommenter.git` inside the _start/_ directory and you are good to go!
-
